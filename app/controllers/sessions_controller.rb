@@ -1,9 +1,8 @@
 class SessionsController < ApplicationController
 
   def new
-    redirect_to '/auth/twitter'
+    redirect_to '/auth/developer'
   end
-
 
   def create
     auth = request.env["omniauth.auth"]
@@ -15,7 +14,6 @@ class SessionsController < ApplicationController
     else
       redirect_to root_url, :notice => 'Signed in!'
     end
-
   end
 
   def destroy
