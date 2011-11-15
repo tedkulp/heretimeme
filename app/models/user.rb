@@ -6,6 +6,8 @@ class User
   field :email, :type => String
   attr_accessible :provider, :uid, :name, :email
 
+  embeds_many :projects
+
   def self.create_with_omniauth(auth)
     create! do |user|
       user.provider = auth['provider']

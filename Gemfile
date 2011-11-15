@@ -42,3 +42,5 @@ gem "omniauth", ">= 1.0.0"
 gem "omniauth-twitter"
 gem "zurb-foundation"
 gem "rails-footnotes", ">= 3.7", :group => :development
+gem 'state_machine'
+gem "timecop", :group => :test

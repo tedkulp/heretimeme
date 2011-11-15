@@ -1,4 +1,8 @@
 Heretimeme::Application.routes.draw do
+  resources :timers
+
+  resources :projects
+
   #get \"users\/show\"
 
   root :to => "home#index"
